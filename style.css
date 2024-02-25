@@ -1,0 +1,18 @@
+body {
+text-align: center;
+background-color: darkolivegreen;
+}
+
+/* #tabelaResultado {
+    border-collapse: collapse;
+    border: 1px solid black; 
+}  */
+
+
+#tabelaResultado {
+    display: none; /* Oculta a tabela inicialmente */
+}
+
+.destaque {
+    background-color: yellow;
+}
