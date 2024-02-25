@@ -59,5 +59,3 @@ document.addEventListener("DOMContentLoaded", function() {
        return imc;
    }
 });
-
-let teste;
