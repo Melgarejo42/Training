@@ -1,19 +1,14 @@
 body {
 text-align: center;
 color: white;
-background-color: darkolivegreen;
+background-color: cornflowerblue;
 }
 
-/* #tabelaResultado {
-    border-collapse: collapse;
-    border: 1px solid black; 
-}  */
-
-
+/* Oculta a tabela inicialmente */
 #tabelaResultado {
-    display: none; /* Oculta a tabela inicialmente */
+    display: none; 
 }
 
 .destaque {
-    background-color: darkorange;
+    background-color: rgb(73, 113, 58);
 }
