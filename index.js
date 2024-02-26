@@ -38,6 +38,9 @@ document.addEventListener("DOMContentLoaded", function() {
            }
        }
 
+       // Limpar os destaques
+       clearHighlights();
+
        // Determinar o ID da linha correspondente à classificação do IMC
        let linhaID = classificacao(imc);
        console.log("Linha ID:", linhaID);
@@ -46,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function() {
        let linha = document.getElementById(linhaID);
        console.log("Linha:", linha);
        if (linha) {
-           linha.classList.remove("destaque");
            linha.classList.add("destaque");
        }
 
@@ -58,5 +60,12 @@ document.addEventListener("DOMContentLoaded", function() {
        let alturaMetros = altura / 100;
        let imc = peso / (alturaMetros * alturaMetros);
        return imc;
+   }
+
+   function clearHighlights() {
+        let linha = document.querySelectorAll("tabelaResultado tr");
+        linha.forEach(function(linha) {
+            linha.classList.remove("destaque");
+        });
    }
 });
