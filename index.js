@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
        let linha = document.getElementById(linhaID);
        console.log("Linha:", linha);
        if (linha) {
+           linha.classList.remove("destaque");
            linha.classList.add("destaque");
        }
 
