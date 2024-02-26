@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
            }
        }
 
-       // Limpar os destaques
+       // Limpar os destaques anteriores
        clearHighlights();
 
        // Determinar o ID da linha correspondente à classificação do IMC
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
    }
 
    function clearHighlights() {
-        let linha = document.querySelectorAll("tabelaResultado tr");
+        let linha = document.querySelectorAll("#tabelaResultado tr");
         linha.forEach(function(linha) {
             linha.classList.remove("destaque");
         });
