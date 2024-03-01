@@ -1,0 +1,14 @@
+body {
+text-align: center;
+color: white;
+background-color: cornflowerblue;
+}
+
+/* Remover bullet point dos links */
+.no-bullet {
+    list-style-type: none;
+}
+
+.destaque {
+    background-color: rgb(73, 113, 58);
+}
