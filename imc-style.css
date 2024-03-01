@@ -4,6 +4,11 @@ color: white;
 background-color: cornflowerblue;
 }
 
+/* Remover bullet point dos links */
+.no-bullet {
+    list-style-type: none;
+}
+
 /* Oculta a tabela inicialmente */
 #tabelaResultado {
     display: none; 
