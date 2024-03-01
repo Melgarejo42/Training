@@ -7,6 +7,8 @@ background-color: cornflowerblue;
 /* Remover bullet point dos links */
 .no-bullet {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* Oculta a tabela inicialmente */
