@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Variável imc será igual ao resultado da função calcularIMC
     let imc = calcularIMC(altura, peso);
 
-    // Mensagem exibida ao usuário após o cálculo, de acordo com os dados fornecidos
+    // Exibe mensagem ao usuário após o cálculo, de acordo com os dados fornecidos
     let mensagem;
        if (imc < 18.5) {
            mensagem = "Abaixo do peso.";
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
        document.getElementById("resultadoIMC").innerText = "Seu IMC é " + imc.toFixed(1) + "\n\n Classificação: " + mensagem;
 
-       // Função para classificar o resultado
+       // Classifica o resultado
     function classificacao(imc) {
         if (imc < 18.5) {
             return "abaixoDoPeso";
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Limpa os destaques anteriores
     clearHighlights();
 
-    // Determinar o ID da linha correspondente à classificação do IMC
+    // Determina o ID da linha correspondente à classificação do IMC
     let linhaID = classificacao(imc);
     console.log("Linha ID:", linhaID);
 
@@ -60,14 +60,14 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("tabelaResultado").style.display = "inline-table";
 });
 
-    // Função para calculo do IMC (peso dividido pela altura ao quadrado)
+    // Calcula o IMC (peso dividido pela altura ao quadrado)
    function calcularIMC(altura, peso) {
        let alturaMetros = altura / 100;
        let imc = peso / (alturaMetros * alturaMetros);
        return imc;
    }
 
-   // Função para limpar os destaques anteriores
+   // Limpa os destaques anteriores
    function clearHighlights() {
         let linha = document.querySelectorAll("#tabelaResultado tr");
         linha.forEach(function(linha) {
